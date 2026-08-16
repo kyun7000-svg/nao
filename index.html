@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                   "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      background: #f4f1eb;
+      color: #292923;
+      line-height: 1.8;
+    }
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #e8e1d4, #f7f5f0);
+    }
+    .hero-content {
+      max-width: 800px;
+    }
+    .label {
+      display: inline-block;
+      padding: 6px 16px;
+      border: 1px solid #77715f;
+      border-radius: 999px;
+      font-size: 13px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 80px);
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+    .catchcopy {
+      font-size: 18px;
+      color: #666153;
+    }
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 90px 25px;
+    }
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 45px;
+      letter-spacing: 2px;
+    }
+    .section-title span {
+      display: block;
+      font-size: 12px;
+      color: #8b8678;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+    }
+    .profile {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .profile-icon {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: #77745e;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 70px;
+    }
+    .profile-text p {
+      margin-bottom: 15px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+    .tag {
+      display: inline-block;
+      background: #e8e4d8;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin: 4px 3px;
+    }
+    .values {
+      background: #35362e;
+      color: white;
+      max-width: none;
+      padding-left: max(25px, calc((100% - 950px) / 2));
+      padding-right: max(25px, calc((100% - 950px) / 2));
+    }
+    .values .section-title span {
+      color: #aaa894;
+    }
+    .value-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .value-item {
+      border-top: 1px solid #77786e;
+      padding-top: 20px;
+    }
+    .value-item h3 {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: #777;
+      font-size: 13px;
+    }
+    @media (max-width: 700px) {
+      .profile,
+      .cards,
+      .value-list {
+        grid-template-columns: 1fr;
+      }
+      .profile-icon {
+        width: 170px;
+        height: 170px;
+        font-size: 55px;
+      }
+      section {
+        padding: 65px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="label">MY PROFILE</div>
+      <h1>松永 直</h1>
+      <p class="catchcopy">
+        仕事も、身体づくりも、暮らしも。<br>
+        「もっと良くする」を楽しむ人。
+      </p>
+    </div>
+  </header>
+  <section>
+    <div class="section-title">
+      <span>ABOUT ME</span>
+      Profile
+    </div>
+    <div class="profile">
+      <div class="profile-icon">
+        N
+      </div>
+      <div class="profile-text">
+        <p>
+          25歳。コンサルタントとして働きながら、
+          筋トレ・ファッション・暮らし・お金など、
+          日々の生活を少しずつアップデートしている。
+        </p>
+        <p>
+          「なんとなく」で済ませず、
+          気になったことは調べて比較して、
+          自分にとって一番いい選択を探すタイプ。
+        </p>
+        <p>
+          綺麗めで落ち着いたファッションが好き。
+          オリーブ、ベージュ、ブラウン、カーキなどの
+          アースカラーを好む。
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-title">
+      <span>INTERESTS</span>
+      Things I Like
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>🏋️ 筋トレ</h3>
+        <p>
+          Anytime Fitnessに通い、週3回ほどトレーニング。
+          筋肉をつけながら、最終的には身体を絞ることも目標。
+        </p>
+        <br>
+        <span class="tag">Bench Press</span>
+        <span class="tag">Squat</span>
+        <span class="tag">Deadlift</span>
+      </div>
+      <div class="card">
+        <h3>👔 Fashion</h3>
+        <p>
+          ガタイの良さを活かした綺麗めスタイルを研究中。
+          シンプルだけど雰囲気のある服装が好き。
+        </p>
+        <br>
+        <span class="tag">Olive</span>
+        <span class="tag">Beige</span>
+        <span class="tag">Brown</span>
+        <span class="tag">Leather</span>
+      </div>
+      <div class="card">
+        <h3>☕ Coffee</h3>
+        <p>
+          コーヒーが好き。
+          普通のコーヒーだけではなく、
+          バレルエイジドのような少し変わったものにも興味を持つ。
+        </p>
+      </div>
+      <div class="card">
+        <h3>🎮 Games</h3>
+        <p>
+          Nintendo 64などのゲームや、
+          BIOHAZARDシリーズにも興味あり。
+          新しい作品だけでなく、昔のゲームの技術にも興味を持つ。
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="values">
+    <div class="section-title">
+      <span>MY STYLE</span>
+      What I Value
+    </div>
+    <div class="value-list">
+      <div class="value-item">
+        <h3>01. 調べる</h3>
+        <p>
+          気になったことはそのままにせず、
+          「結局どういうこと？」まで理解したい。
+        </p>
+      </div>
+      <div class="value-item">
+        <h3>02. 比較する</h3>
+        <p>
+          お金、時間、性能、メリット・デメリット。
+          複数の選択肢を比べて納得して決める。
+        </p>
+      </div>
+      <div class="value-item">
+        <h3>03. 改善する</h3>
+        <p>
+          筋トレ、食事、服、住む場所、お金。
+          今より少し良い状態を目指して改善していく。
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-title">
+      <span>GOALS</span>
+      Currently Working On
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>💪 Body</h3>
+        <p>
+          筋肉をしっかりつけながら、
+          ベンチプレス100kgを目指す。
+        </p>
+      </div>
+      <div class="card">
+        <h3>🏠 Lifestyle</h3>
+        <p>
+          テレワークもしやすく、
+          生活の質が上がる住環境を探している。
+        </p>
+      </div>
+      <div class="card">
+        <h3>💰 Money</h3>
+        <p>
+          クレジットカード、ふるさと納税、
+          家賃などを含めて、お金の使い方を最適化。
+        </p>
+      </div>
+      <div class="card">
+        <h3>🧠 Learning</h3>
+        <p>
+          AI、SaaS、テクノロジーなど、
+          新しいサービスや仕組みにも関心がある。
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    © 2026 Naoki Matsunaga
+  </footer>
+</body>
+</html>
